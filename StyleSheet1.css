@@ -1,45 +1,62 @@
-body {
-    font: 14px "Open Sans", "Arial", sans-serif;
+/* File Name: StyleSheet1.css
+   Author: Kyle C. Larson 11/4/2020
+   License: GPLv3 GNU General Public License 3 https://www.gnu.org/licenses/gpl-3.0.en.html
+*/
+html, body {
+    background-color: #222;
+    background-size: auto 900px;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 404;
+    height: 100vh;
+    margin: 0;
 }
 
-video {
-    margin-top: 2px;
-    border: 1px solid black;
-}
-
-.button {
-    cursor: pointer;
-    display: block;
-    width: 160px;
-    border: 1px solid black;
-    font-size: 16px;
-    text-align: center;
-    padding-top: 2px;
-    padding-bottom: 4px;
-    color: white;
-    background-color: darkgreen;
-    text-decoration: none;
-}
-
-h2 {
-    margin-bottom: 4px;
-}
-
-.left {
-    margin-right: 10px;
-    float: left;
-    width: 160px;
-    padding: 0px;
-}
-
-.right {
-    margin-left: 10px;
-    float: left;
-    width: 160px;
-    padding: 0px;
-}
-
-.bottom {
-    clear: both;
-    padding-top: 10px;
+#bodyDiv {
+    display: grid;
+    grid-template-columns: 
+        10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    /*10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px*/;
+    
+    
+    grid-template-rows: 
+        10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    /*10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    */;
 }

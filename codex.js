@@ -2,72 +2,20 @@
 // Author: Kyle C. Larson
 // Purpose: To help one prepare to answer short interviews
 // License: GNU General Public License 3 (GPL-3.0)
-let preview = document.getElementById("preview");
-let recording = document.getElementById("recording");
-let startButton = document.getElementById("startButton");
-let stopButton = document.getElementById("stopButton");
-let downloadButton = document.getElementById("downloadButton");
-let logElement = document.getElementById("log");
+const div = document.getElementById('bodyDiv');
 
-let recordingTimeMS = 5000;
-function log(msg) {
-    logElement.innerHTML += msg + "\n";
+function gridPrint(str, gridcontainer) {
+	for (let i = 0; i < str.length; i++) {
+		const newDiv = document.createElement('div');
+		newDiv.className = 'grid-item';
+		newDiv.innerHTML = str[i];
+		gridcontainer.appendChild(newDiv);
+	}
 }
+var rows = 150;
+var columns = 80;
+var dotcount = rows*columns;
 
-function wait(delayInMS) {
-    return new Promise(resolve => setTimeout(resolve, delayInMS));
+for (let i = 0; i < dotcount; i++) {
+	gridPrint('.', div);
 }
-
-function startRecording(stream, lengthInMS) {
-    let recorder = new MediaRecorder(stream);
-    let data = [];
-
-    recorder.ondataavailable = event => data.push(event.data);
-    recorder.start();
-    log(recorder.state + " for " + (lengthInMS / 1000) + " seconds...");
-
-    let stopped = new Promise((resolve, reject) => {
-        recorder.onstop = resolve;
-        recorder.onerror = event => reject(event.name);
-    });
-
-    let recorded = wait(lengthInMS).then(
-        () => recorder.state == "recording" && recorder.stop()
-    );
-
-    return Promise.all([
-        stopped,
-        recorded
-    ])
-        .then(() => data);
-}
-
-function stop(stream) {
-    stream.getTracks().forEach(track => track.stop());
-}
-
-startButton.addEventListener("click", function () {
-    navigator.mediaDevices.getUserMedia({
-        video: true,
-        audio: true
-    }).then(stream => {
-        preview.srcObject = stream;
-        downloadButton.href = stream;
-        preview.captureStream = preview.captureStream || preview.mozCaptureStream;
-        return new Promise(resolve => preview.onplaying = resolve);
-    }).then(() => startRecording(preview.captureStream(), recordingTimeMS))
-        .then(recordedChunks => {
-            let recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
-            recording.src = URL.createObjectURL(recordedBlob);
-            downloadButton.href = recording.src;
-            downloadButton.download = "RecordedVideo.webm";
-
-            log("Successfully recorded " + recordedBlob.size + " bytes of " +
-                recordedBlob.type + " media.");
-        })
-        .catch(log);
-}, false);
-
-stopButton.addEventListener("click", function () {
-    stop(preview.srcObject);
-}, false);
