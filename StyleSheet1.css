@@ -30,15 +30,11 @@ html, body {
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    /*10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px*/;
+    ;
     
     
     grid-template-rows: 
-        10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
@@ -46,7 +42,7 @@ html, body {
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    /*10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
@@ -58,5 +54,9 @@ html, body {
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    */;
+     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
+    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
+    ;
 }
