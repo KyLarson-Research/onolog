@@ -15,48 +15,11 @@ html, body {
 #bodyDiv {
     display: grid;
     grid-template-columns: 
-        10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
+        440px 1060px 
     ;
     
     
     grid-template-rows: 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-     10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px  
-    10px 10px 10px 10px 10px 10px 10px 10px 10px 10px
+    1960px 440px
     ;
 }
