@@ -22,6 +22,10 @@ adiv.appendChild(xa);
 
 var ya = document.createElement("INPUT");
 ya.setAttribute("type", "text");
-ya.setAttribute("value", "enter a answer");
+ya.setAttribute("value", "enter a answer enter a answerenter a answerenter a answer");
+ya.setAttribute("class", "submissionfield");
+ya.setAttribute("wrap", "soft");
+
 ya.setAttribute("my", 4);
+ya.setAttribute("height", 400);
 document.getElementById("myaForm").appendChild(ya);

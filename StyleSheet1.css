@@ -20,6 +20,13 @@ html, body {
     
     
     grid-template-rows: 
-    1960px 440px
+        1960px 440px
     ;
+}
+
+.submissionfield {
+    width: 90px;
+    height: 390px;
+    border: 1px solid #999999;
+    padding: 5px;
 }

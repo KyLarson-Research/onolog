@@ -1,0 +1,9 @@
+{
+  "name": "onolog",
+  "version": "0.0.0",
+  "description": "onolog",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
