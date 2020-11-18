@@ -2,30 +2,34 @@
 // Author: Kyle C. Larson
 // Purpose: To help one prepare to answer short interviews
 // License: GNU General Public License 3 (GPL-3.0)
-const qdiv = document.getElementById('questDiv');
+// https://www.gnu.org/licenses/gpl-3.0.en.html
+const titleTA = document.getElementById("titleTextArea");
+var repeat = 0;
+var TIME_DELAY = 1000;
+titleTA.value = "Welcome To Kyle's Cornel Notes!";
+//Change value after 1000 ms
+let timerID = setTimeout(function () {
+    titleTA.value = "TODO: Enter FileName, Author, Date";
+}, TIME_DELAY);
+const fs = require("fs");
+document.getElementById("saveButton").onclick =  ()=> { save() };
 
-var xq = document.createElement("FORM");
-xq.setAttribute("id", "myqForm");
-qdiv.appendChild(xq);
-
-var yq = document.createElement("INPUT");
-yq.setAttribute("type", "text");
-yq.setAttribute("value", "enter a question");
-yq.setAttribute("my", 3);
-document.getElementById("myqForm").appendChild(yq);
-
-
-const adiv = document.getElementById('ansDiv');
-var xa = document.createElement("FORM");
-xa.setAttribute("id", "myaForm");
-adiv.appendChild(xa);
-
-var ya = document.createElement("INPUT");
-ya.setAttribute("type", "text");
-ya.setAttribute("value", "enter a answer enter a answerenter a answerenter a answer");
-ya.setAttribute("class", "submissionfield");
-ya.setAttribute("wrap", "soft");
-
-ya.setAttribute("my", 4);
-ya.setAttribute("height", 400);
-document.getElementById("myaForm").appendChild(ya);
+function save() {
+    
+    console.log("Going to write into existing file");
+    // Open a new file with name input.txt and write Simply Easy Learning! to it.
+    fs.writeFile(titleTA.value + ".txt", document.getElementByID("myqForm").value + "\n" + document.getElementByID("myaForm").value, function (err) {
+        if (err) {
+            return console.error(err);
+        }
+        console.log("Data written successfully!");
+        console.log("Let's read newly written data");
+        // Read the newly written file and print all of its content on the console
+        fs.readFile(titleTA.value+'.txt', function (err, data) {
+            if (err) {
+                return console.error(err);
+            }
+            console.log("Asynchronous read: " + data.toString());
+        });
+    });
+}
