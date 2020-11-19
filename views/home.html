@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<!-- FileName: Home.html -->
+<!-- Author: Kyle C. Larson -->
+<!-- License: GNU General Public License 3  https://www.gnu.org/licenses/gpl-3.0.en.html-->
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8" />
+    <title>onolog</title>
+    <link rel="stylesheet" href="./StyleSheet1.css" /> <!-- Note: this is not the actual href -->
+    <script type="text/javascript" src="./codex.js" async></script><!-- Note: this is not the actual href -->
+</head>
+<body>
+    <div id="bodyDiv">
+        <div class="grid-item" id="headingDiv">
+            <textarea id="titleTextArea" style="background-color: #222; color: #FFF" rows="1" cols="45">
+                </textarea>
+        </div>
+        <div class="grid-item"><button id="saveButton">SAVE</button></div>
+        <div class="grid-item" id="questDiv">
+            <textarea id="myqForm" style="background-color: #222; color: #FFF" rows="26" cols="55">CUE
+                </textarea>
+        </div>
+        <div class="grid-item" id="ansDiv">
+            <textarea id="myaForm" style="background-color: #222; color: #FFF" rows="26" cols="185">MAIN
+                </textarea>
+        </div>
+
+        <div class="grid-item">         SUMMARY:</div>
+        <div class="grid-item" id="summaryDiv"></div>
+    </div>
+</body>
+</html>

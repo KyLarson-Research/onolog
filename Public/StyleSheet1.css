@@ -1,0 +1,29 @@
+/* File Name: StyleSheet1.css
+   Author: Kyle C. Larson 11/4/2020
+   License: GPLv3 GNU General Public License 3 https://www.gnu.org/licenses/gpl-3.0.en.html
+*/
+html, body {
+    background-color: #222;
+    background-size: auto 900px;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 404;
+    height: 100vh;
+    margin: 0;
+}
+
+#bodyDiv {
+    display: grid;
+    grid-template-columns: 
+        440px 1060px 
+    ;
+    
+    
+    grid-template-rows: 
+        20px 1960px 440px
+    ;
+}
+
+textarea {
+    border: 1px #222;
+}
