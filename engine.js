@@ -24,7 +24,6 @@ var io = require('socket.io');
     //res.end('Hello World\n');
 });*/
 
-
 var app = express();
 var server = http.createServer(app)
 server.listen(port, function (error) {
@@ -42,3 +41,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
     res.render('home');
 });
+/*
+fs.appendFile('engineEERED.txt', 'node success!', function (err) {
+    if (err) throw err;
+    console.log('saved');
+});*/
